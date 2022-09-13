@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		637F5B9C28CE878200372AF9 /* HapticsTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F5B9B28CE878200372AF9 /* HapticsTestApp.swift */; };
-		637F5B9E28CE878200372AF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F5B9D28CE878200372AF9 /* ContentView.swift */; };
 		637F5BA028CE878400372AF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 637F5B9F28CE878400372AF9 /* Assets.xcassets */; };
 		637F5BA328CE878400372AF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 637F5BA228CE878400372AF9 /* Preview Assets.xcassets */; };
+		637F5BAA28CE87E600372AF9 /* LargeToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F5BA928CE87E600372AF9 /* LargeToggle.swift */; };
+		637F5BAC28CF230D00372AF9 /* RadialDial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F5BAB28CF230D00372AF9 /* RadialDial.swift */; };
+		63D0337928CF7BE900676873 /* WeekButtonArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D0337828CF7BE900676873 /* WeekButtonArray.swift */; };
+		63D0337C28CF94E200676873 /* DialFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D0337B28CF94E200676873 /* DialFace.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		637F5B9828CE878200372AF9 /* HapticsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapticsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		637F5B9B28CE878200372AF9 /* HapticsTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsTestApp.swift; sourceTree = "<group>"; };
-		637F5B9D28CE878200372AF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		637F5B9F28CE878400372AF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		637F5BA228CE878400372AF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		637F5BA928CE87E600372AF9 /* LargeToggle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeToggle.swift; sourceTree = "<group>"; };
+		637F5BAB28CF230D00372AF9 /* RadialDial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialDial.swift; sourceTree = "<group>"; };
+		63D0337828CF7BE900676873 /* WeekButtonArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekButtonArray.swift; sourceTree = "<group>"; };
+		63D0337B28CF94E200676873 /* DialFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialFace.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				637F5B9B28CE878200372AF9 /* HapticsTestApp.swift */,
-				637F5B9D28CE878200372AF9 /* ContentView.swift */,
+				63D0337A28CF7C3C00676873 /* Components */,
 				637F5B9F28CE878400372AF9 /* Assets.xcassets */,
 				637F5BA128CE878400372AF9 /* Preview Content */,
 			);
@@ -65,6 +71,17 @@
 				637F5BA228CE878400372AF9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		63D0337A28CF7C3C00676873 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				637F5BA928CE87E600372AF9 /* LargeToggle.swift */,
+				63D0337828CF7BE900676873 /* WeekButtonArray.swift */,
+				63D0337B28CF94E200676873 /* DialFace.swift */,
+				637F5BAB28CF230D00372AF9 /* RadialDial.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				637F5B9E28CE878200372AF9 /* ContentView.swift in Sources */,
 				637F5B9C28CE878200372AF9 /* HapticsTestApp.swift in Sources */,
+				637F5BAC28CF230D00372AF9 /* RadialDial.swift in Sources */,
+				637F5BAA28CE87E600372AF9 /* LargeToggle.swift in Sources */,
+				63D0337928CF7BE900676873 /* WeekButtonArray.swift in Sources */,
+				63D0337C28CF94E200676873 /* DialFace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
