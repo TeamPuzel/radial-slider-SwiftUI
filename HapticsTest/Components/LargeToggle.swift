@@ -46,7 +46,7 @@ struct LargeToggle: View {
                 }
                 .padding(6)
             }
-            .animation(.spring(response: 0.2, dampingFraction: 1, blendDuration: 0.1), value: isOn)
+            .animation(.spring(response: 0.2, dampingFraction: 0.7, blendDuration: 0.1), value: isOn)
             .onTapGesture {
                 isOn.toggle()
                 rigidFeedback.impactOccurred()

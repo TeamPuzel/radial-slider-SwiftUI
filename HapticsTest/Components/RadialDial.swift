@@ -11,8 +11,8 @@ struct RadialDial: View {
     @Environment(\.colorScheme) var colorScheme
     let rigidFeedback = UIImpactFeedbackGenerator(style: .rigid)
     let lightFeedback = UIImpactFeedbackGenerator(style: .light)
-    @State var startRotation: Angle = Angle(degrees: 0)
-    @State var endRotation: Angle = Angle(degrees: 180)
+    @Binding var startRotation: Angle
+    @Binding var endRotation: Angle
     
     var body: some View {
         ZStack {
@@ -69,7 +69,7 @@ struct RadialDial: View {
             
         }
         .rotationEffect(Angle(degrees: -90))
-        .animation(.interactiveSpring(), value: endRotation)
-        .animation(.interactiveSpring(), value: startRotation)
+        .animation(.interactiveSpring(response: 0.1, dampingFraction: 1, blendDuration: 0.05), value: endRotation)
+        .animation(.interactiveSpring(response: 0.1, dampingFraction: 1, blendDuration: 0.05), value: startRotation)
     }
 }

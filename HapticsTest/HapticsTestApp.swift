@@ -19,6 +19,8 @@ struct HapticsTestApp: App {
 struct CoreView: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var isOn = true
+    @State var startRotation: Angle = Angle(degrees: 0)
+    @State var endRotation: Angle = Angle(degrees: 180)
     
     var body: some View {
         ZStack {
@@ -50,13 +52,13 @@ struct CoreView: View {
                 HStack {
                     Spacer()
                     VStack {
-                        Text("BEDTIME") .foregroundColor(.secondary)
+                        Text("BEDTIME") .foregroundColor(.cyan)
                             .font(.system(.subheadline, design: .rounded, weight: .semibold))
                         Text("22:00") .font(.headline)
                     }
                     Spacer()
                     VStack {
-                        Text("WAKE UP") .foregroundColor(.secondary)
+                        Text("WAKE UP") .foregroundColor(.orange)
                             .font(.system(.subheadline, design: .rounded, weight: .semibold))
                         Text("07:30") .font(.headline)
                     }
@@ -66,7 +68,7 @@ struct CoreView: View {
                 ZStack {
                     DialFace()
                     LargeToggle(isOn: $isOn, label: "Alarm", onSymbol: Image(systemName: "bell"), offSymbol: Image(systemName: "bell.slash"))
-                    RadialDial()
+                    RadialDial(startRotation: $startRotation, endRotation: $endRotation)
                 }
                 VStack {
                     Text("9 hours and 30 minutes")
